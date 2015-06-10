@@ -2,9 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.alert{
+.alert {
 position:absolute;
 z-index:1;
 width:200px;
 
+}
+
+.img  {
+  background-image: url('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEY8j8Q2B0ikAkLA0qJQ94OmKf1_M81ujevqzX6MytxR_OaMLY')
 }
