@@ -5,5 +5,13 @@ class Place < ActiveRecord::Base
 	validates_presence_of :website
 	#validates_presence_of :user_id
 	belongs_to :user 
+  
+   def self.search(search)
+   	if search
+   		where(['name LIKE ? OR address LIKE ?', "{#search}", "{#search}"])
+   	else
+   		all
+   	end    	  
+ end
 
 end
